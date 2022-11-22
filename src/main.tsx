@@ -11,11 +11,13 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { TopBar } from './components/TopBar';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<Provider store={store}>
+				<TopBar />
 				<BrowserRouter>
 					<Routes>
 						<Route path='/' element={<Home />}>
