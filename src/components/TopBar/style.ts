@@ -44,6 +44,8 @@ export const ConteinerBackground = styled.div`
     padding: .5rem;
     width: 10rem;
     border-radius: 3rem;
+    cursor: pointer;
+    display: flex;
 
     @media (max-width: 523px) {
         width: 9rem;

@@ -1,5 +1,6 @@
 import * as S from './style';
-type ButtonDownload = {
+
+export type ButtonDownload = {
     link: string
     text: string
 }
