@@ -32,4 +32,8 @@ export const Conteiner  = styled.div`
         font-size: 6rem;
         color: ${props => props.theme.colors.purple_200};
     }
+
+    &:hover {
+        transform: scale(1.2);
+    }
 `;
