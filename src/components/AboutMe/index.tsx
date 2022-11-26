@@ -1,9 +1,10 @@
+import { Hearding } from '../Hearding';
 import * as S from './style';
 
 export const AboutMe = () => {
 	return (
 		<S.Conteiner>
-			<S.Hearding>Sobre mim</S.Hearding>
+			<Hearding text='Sobre mim'/>
 			<S.ConteinerText>
 				<h3>Teresina, PI</h3>
 				<S.Paragrafo>

@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 
 import { Skills } from '../Skills';
 import { PropsArreySkills, skills } from '../../themes/skills';
+import { ConteinerFlex } from '../ConteinerFlex';
+import { Hearding } from '../Hearding';
 
 export const ConteinerSkills = () => {
 	const [useSkills, setUseSkills] = useState<PropsArreySkills[]>([]);
@@ -13,8 +15,8 @@ export const ConteinerSkills = () => {
 	}, []);
 
 	return (
-		<S.Conteiner>
-			<S.Heading>Habilidades</S.Heading>
+		<ConteinerFlex>
+			<Hearding text="Habilidades"/>
 			<S.ConteinerSkills>
 				{
 					useSkills.map(item => (
@@ -22,6 +24,6 @@ export const ConteinerSkills = () => {
 					))
 				}
 			</S.ConteinerSkills>
-		</S.Conteiner>
+		</ConteinerFlex>
 	);
 };

@@ -8,12 +8,6 @@ export const Conteiner  = styled.section`
     justify-content: center;
 `;
 
-export const Hearding = styled.h2`
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2.5rem;
-`;
-
 export const ConteinerText = styled.div`
     width: 70%;
     margin: 0% auto;

@@ -16,3 +16,8 @@ export const Conteiner  = styled.button`
         transform: scale(1.1);
     }
 `;
+
+export const Texto = styled.p`
+    font-size: 1.6rem;
+    color: #fff;
+`;
