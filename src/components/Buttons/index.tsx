@@ -18,10 +18,10 @@ export const ButtoDownload = ({ link, text }: ButtonDownload) => {
 	);
 };
 
-export const ButtonClick = ({ handleClick, text }: PropsButtonClick) => {
+export const ButtonLinks = ({ link, text }: ButtonDownload) => {
 	return (
-		<S.Conteiner onClick={handleClick}>
-			<S.Texto>{text}</S.Texto>
+		<S.Conteiner >
+			<a href={link} target={'blank'} rel="noreferrer" >{text}</a>
 		</S.Conteiner>
 	);
 };

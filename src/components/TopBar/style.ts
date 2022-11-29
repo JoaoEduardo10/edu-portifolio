@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.aside`
+export const Conteiner  = styled.aside<{ project: boolean }>`
     position: fixed;
     top: 0%;
     width: 100%;
     z-index: 100;
-    display: flex;
+    display: ${props => props.project? 'none' : 'flex'};
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;

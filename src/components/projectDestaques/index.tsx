@@ -1,8 +1,9 @@
 import * as S from './style';
 
 import { useEffect, useState } from 'react';
+
 import { PropsProject, project } from '../../themes/project';
-import { Destaques } from '../Projects';
+import { Projects } from '../Projects';
 
 export const ProjetcDestaques = () => {
 	const [projectAll, setProjectAll] = useState<PropsProject[]>([]);
@@ -18,12 +19,13 @@ export const ProjetcDestaques = () => {
 			<S.ConteinerProject>
 				{
 					projectAll.filter(item => item.destaque === true).map(item => (
-						<Destaques 
+						<Projects 
 							key={item.id} 
 							data={item.date} 
 							img={item.img} 
 							tecnologias={item.tecnologias}
 							text={item.name}
+							id={item.id}
 						/>
 					))
 				}

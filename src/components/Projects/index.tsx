@@ -1,17 +1,22 @@
 import { ReactNode, useState } from 'react';
 import * as S from './style';
 
+import { useAppDispatch } from '../../store/hookes';
+import { addId, addProject } from '../../store/interfaces/completeProject/completProjectSlice';
+
 export type PropsDestaques = {
     img: string
     text: string
     tecnologias: ReactNode[]
     data: string
+	id: string
 }
 
-export const Destaques = ({ img, tecnologias, text, data }:PropsDestaques) => {
-
+export const Projects = ({ img, tecnologias, text, data, id }:PropsDestaques) => {
 	const [show, setShow] = useState(false);
 	const [color, setColor] = useState(false);
+	const dispatch = useAppDispatch();
+
 
 	const handleMouseEnter = () => {
 		setShow(true);
@@ -27,7 +32,8 @@ export const Destaques = ({ img, tecnologias, text, data }:PropsDestaques) => {
 	};
 
 	const handleClick = () => {
-		return;
+		dispatch(addId(id));
+		dispatch(addProject(true));
 	};
 
 	return (

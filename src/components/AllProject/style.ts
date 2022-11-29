@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Conteiner  = styled.div`
     padding: 1.6rem;
+    margin-bottom: 5rem;
 `;
 
 export const Hearding  = styled.h3`
     position: relative;
     display: inline-block;
     font-size: 2.8rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
 
     &::after {

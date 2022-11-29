@@ -1,9 +1,13 @@
 import * as S from './style';
 import { FiMenu } from 'react-icons/fi';
 
+import { useAppSelector } from '../../store/hookes';
+
 export const TopBar = () => {
+	const { project } = useAppSelector(item => item.completeProject);
+
 	return (
-		<S.Conteiner>
+		<S.Conteiner project={project}>
 			<S.ConteinerIconMenu>
 				<FiMenu />
 			</S.ConteinerIconMenu>
