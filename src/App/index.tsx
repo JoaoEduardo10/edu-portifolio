@@ -5,9 +5,8 @@ import { ConteinerSkills } from '../components/ConteinerSkills';
 import { Hearder } from '../components/Hearder';
 import * as S from './style';
 
-
- 
 import { useAppSelector } from '../store/hookes';
+import { Contacts } from '../components/ Contacts';
 
 export const  Home = () => {
 	const { project, id } = useAppSelector(item => item.completeProject);
@@ -19,16 +18,13 @@ export const  Home = () => {
 					<CompleteProject id={id} />
 				)
 			}
-			{
-				!project && (
-					<>
-						<Hearder />
-						<AboutMe />
-						<ConteinerSkills />
-						<ConteinerProject />
-					</>
-				)
-			}
+			
+			<Hearder />
+			<AboutMe />
+			<ConteinerSkills />
+			<ConteinerProject />
+			<Contacts />
+
 		</S.Conteiner>
 	);
 };

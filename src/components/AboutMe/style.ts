@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.section`
+export const Conteiner  = styled.section<{ project: boolean }>`
     height: 90vh;
     margin-top: -10rem;
-    display: flex;
+    display: ${props => props.project ? 'none' : 'flex'};
     flex-direction: column;
     justify-content: center;
 `;

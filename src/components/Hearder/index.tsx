@@ -1,17 +1,22 @@
 import * as S from './style';
+
 import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
+
 import { theme } from '../../style/themes';
+
 import { ButtoDownload } from '../Buttons';
 import { BiCodeAlt } from 'react-icons/bi';
+
+import { useAppSelector } from '../../store/hookes';
 
 export const Hearder = () => {
 	const [nameOne, setNameOne] = useState(false);
 	const [nameTwo, setNameTwo] = useState(false);
-
+	const { project } = useAppSelector(item => item.completeProject);
 
 	return (
-		<S.Conteiner>
+		<S.Conteiner project={project}>
 			<S.Conteinertext>
 				<TypeAnimation 
 					sequence={[

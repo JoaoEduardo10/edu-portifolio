@@ -1,9 +1,13 @@
 import { Hearding } from '../Hearding';
 import * as S from './style';
 
+import { useAppSelector } from '../../store/hookes';
+
 export const AboutMe = () => {
+	const { project } = useAppSelector(item => item.completeProject);
+
 	return (
-		<S.Conteiner>
+		<S.Conteiner project={project}>
 			<Hearding text='Sobre mim'/>
 			<S.ConteinerText>
 				<h3>Teresina, PI</h3>

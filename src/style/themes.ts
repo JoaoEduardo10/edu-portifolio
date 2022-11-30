@@ -16,6 +16,6 @@ export const theme: Props = {
 		purple_black: '#13131F'
 	},
 	fonts: {
-		poppins: '\'Poppins\', sans-serif'
+		poppins: '"Poppins", sans-serif'
 	}
 };
