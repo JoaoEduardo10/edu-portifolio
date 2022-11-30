@@ -25,6 +25,14 @@ export const Conteiner  = styled.div`
             opacity: .8;
         }
     }
+
+    @media (max-width: 955px) {
+        box-shadow: none;
+
+        img {
+            opacity: 1;
+        }
+    }
 `;
 
 export const conteinerImg = styled.div`

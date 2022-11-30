@@ -4,13 +4,10 @@ import { Hearding } from '../Hearding';
 import { ProjetcDestaques } from '../projectDestaques';
 import * as S from './style';
 
-import { useAppSelector } from '../../store/hookes';
-
 export const ConteinerProject = () => {
-	const { project } = useAppSelector(item => item.completeProject);
 
 	return (
-		<S.Conteiner project={project}>
+		<S.Conteiner>
 			<ConteinerFlex>
 				<Hearding text='Projetos'/>
 				<ProjetcDestaques />

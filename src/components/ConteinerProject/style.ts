@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.div<{ project: boolean }>`
+export const Conteiner  = styled.div`
     margin-top: 20rem;
-    display: ${props => props.project ? 'none' : 'block'};
+    display: flex;
 `;

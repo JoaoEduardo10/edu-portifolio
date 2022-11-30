@@ -12,6 +12,15 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 62.5%;
     }
 
+    ::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #8257E6;
+        border-radius: 2rem;
+    }
+
     body {
         background-color: #13131F;
         color: #fff;

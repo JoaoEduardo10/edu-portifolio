@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.section<{ project: boolean }>`
+export const Conteiner  = styled.section`
     width: 100%;
     margin: 5rem auto;
-    display: ${props => props.project ? 'none' : 'flex'};
+    display: flex;
     flex-direction: column;
 `;

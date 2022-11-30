@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.div<{ project: boolean }>`
-    display: ${props => props.project ? 'none' : 'block'};
+export const Conteiner  = styled.div`
     margin-top: 8rem;
 `;
 
 export const ConteinerContacts = styled.ul`
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3rem;

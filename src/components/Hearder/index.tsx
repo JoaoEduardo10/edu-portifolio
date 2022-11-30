@@ -8,15 +8,12 @@ import { theme } from '../../style/themes';
 import { ButtoDownload } from '../Buttons';
 import { BiCodeAlt } from 'react-icons/bi';
 
-import { useAppSelector } from '../../store/hookes';
-
 export const Hearder = () => {
 	const [nameOne, setNameOne] = useState(false);
 	const [nameTwo, setNameTwo] = useState(false);
-	const { project } = useAppSelector(item => item.completeProject);
 
 	return (
-		<S.Conteiner project={project}>
+		<S.Conteiner>
 			<S.Conteinertext>
 				<TypeAnimation 
 					sequence={[

@@ -45,14 +45,10 @@ export const CompleteProject = ({ id }: PropsCompleteProject) => {
 							link='123'
 							text='Click a que'
 						/>
-						<ButtonLinks 
-							link='123'
-							text='Click a que'
-						/>
 					</S.ConteinerButtons>
 				</S.ConteinerVideo>
 				<S.ConteinerTexts>
-					<h1>
+					<h1 className='titulo'>
 						<span>
 							{
 								projectFilter.map(item => item.name)
@@ -60,12 +56,12 @@ export const CompleteProject = ({ id }: PropsCompleteProject) => {
 						</span>
 						<span onClick={handleClick}> <HiOutlinePlus /> </span>
 					</h1>
-					<p>
+					<p className='text'>
 						{
 							projectFilter.map(item => item.text)
 						}
 					</p>
-					<p>
+					<p className='text'>
 						{
 							projectFilter.map(item => item.text2)
 						}

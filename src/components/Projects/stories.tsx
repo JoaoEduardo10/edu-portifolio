@@ -1,4 +1,4 @@
-import { Destaques, PropsDestaques } from '.';
+import { Projects, PropsDestaques } from '.';
 import { Meta } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../style/themes';
@@ -12,8 +12,8 @@ import { FaHtml5, FaReact, FaSass } from 'react-icons/fa';
 import { SiRedux, SiTypescript } from 'react-icons/si';
 
 export default {
-	title: 'Destaques',
-	component: Destaques,
+	title: 'Projectdest',
+	component: Projects,
 	args: {
 		img: world,
 		tecnologias: [
@@ -41,4 +41,4 @@ export default {
 } as Meta;
 
 
-export const Tamplate = (agrs: PropsDestaques) => <Destaques {...agrs}/>;
+export const Tamplate = (agrs: PropsDestaques) => <Projects {...agrs}/>;

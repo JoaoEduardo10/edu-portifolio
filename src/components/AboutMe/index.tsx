@@ -7,7 +7,7 @@ export const AboutMe = () => {
 	const { project } = useAppSelector(item => item.completeProject);
 
 	return (
-		<S.Conteiner project={project}>
+		<S.Conteiner>
 			<Hearding text='Sobre mim'/>
 			<S.ConteinerText>
 				<h3>Teresina, PI</h3>

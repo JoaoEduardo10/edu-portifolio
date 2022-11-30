@@ -7,12 +7,9 @@ import { BsTelephone } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 
-import { useAppSelector } from '../../store/hookes';
-
 export const Contacts = () => {
-	const { project } = useAppSelector(item => item.completeProject);
 	return (
-		<S.Conteiner project={project}>
+		<S.Conteiner>
 			<ConteinerFlex>
 				<Hearding text='Contatos' />
 				<S.ConteinerContacts>

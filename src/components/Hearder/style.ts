@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.section<{ project: boolean }>`
+export const Conteiner  = styled.section`
     padding: 10rem 3rem;
-    display: ${props => props.project ? 'none' : 'flex'};
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
