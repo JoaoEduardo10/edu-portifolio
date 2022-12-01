@@ -24,6 +24,11 @@ export const ConteinerIconMenu = styled.div`
         cursor: pointer;
     }
 
+    .svg {
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+
     @media (max-width: 523px) {
         svg {
             font-size: 2.6rem;

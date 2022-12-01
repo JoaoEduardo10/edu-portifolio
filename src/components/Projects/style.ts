@@ -4,21 +4,13 @@ export const Conteiner  = styled.div`
     width: 38.4rem;
     height: 24.2rem;
     border: .1rem solid black;
+    transition: all 300ms ease;
     
-    
-    &.notShow {
-        transform: scale(1);
-        transition: 300ms ease;
-    }
-
-    &.show {
-        transform: scale(1.2);
-        transition: 300ms ease;
-    }
 
     &:hover {
         box-shadow: 0 0 5rem #fff;
         z-index: 100;
+        transform: scale(1.2);
 
 
         img {
@@ -27,10 +19,14 @@ export const Conteiner  = styled.div`
     }
 
     @media (max-width: 955px) {
-        box-shadow: none;
+        
+        &:hover {
+            box-shadow: none;
+            transform: scale(1);
+            img {
+                opacity: 1;
+            }
 
-        img {
-            opacity: 1;
         }
     }
 `;
@@ -139,10 +135,12 @@ export const button = styled.button`
 
     @keyframes showColor {
         0% {
+            color: #000;
             background-color: #ccc;
         }
 
         100% {
+            color: #fff;
             background-color: ${props => props.theme.colors.purple_200};
         }
     }

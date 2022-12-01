@@ -13,7 +13,7 @@ export const Hearder = () => {
 	const [nameTwo, setNameTwo] = useState(false);
 
 	return (
-		<S.Conteiner>
+		<S.Conteiner data-aos="fade-down">
 			<S.Conteinertext>
 				<TypeAnimation 
 					sequence={[

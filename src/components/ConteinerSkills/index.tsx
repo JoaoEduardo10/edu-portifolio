@@ -15,15 +15,17 @@ export const ConteinerSkills = () => {
 	}, []);
 
 	return (
-		<ConteinerFlex>
-			<Hearding text="Habilidades"/>
-			<S.ConteinerSkills>
-				{
-					useSkills.map(item => (
-						<Skills key={item.text} text={item.text} children={item.children} />
-					))
-				}
-			</S.ConteinerSkills>
-		</ConteinerFlex>
+		<div id='habilidades' data-aos="flip-left">
+			<ConteinerFlex>
+				<Hearding text="Habilidades"/>
+				<S.ConteinerSkills >
+					{
+						useSkills.map(item => (
+							<Skills key={item.text} text={item.text} children={item.children} />
+						))
+					}
+				</S.ConteinerSkills>
+			</ConteinerFlex>
+		</div>
 	);
 };

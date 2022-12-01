@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.section`
+export const Conteiner  = styled.section<{ viwport: boolean }>`
     width: 100%;
-    margin: 5rem auto;
+    height: ${props => props.viwport ? '100vh' : '100%'};
+    margin: 0rem auto;
     display: flex;
     flex-direction: column;
 `;

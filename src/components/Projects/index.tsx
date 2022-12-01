@@ -38,7 +38,6 @@ export const Projects = ({ img, tecnologias, text, data, id }:PropsDestaques) =>
 
 	return (
 		<S.Conteiner 
-			className={`${show ? 'show' : 'notShow'}`}
 			onMouseEnter={handleMouseEnter} 
 			onMouseLeave={handleMouseOut}
 			onClick={handleClick}

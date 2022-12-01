@@ -72,10 +72,21 @@ export const ConteinerIcon = styled.div`
         font-size: 40rem;
         color: ${props => props.theme.colors.purple_200};
         transition: all 300ms ease;
+        animation: svg 3s infinite ease alternate-reverse;
     }
 
     svg:hover {
         transform: scale(1.2);
+    }
+
+    @keyframes svg {
+        0% {
+            transform: translateY(6%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
     }
 
     @media (max-width: 787px) {

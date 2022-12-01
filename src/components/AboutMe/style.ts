@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Conteiner  = styled.section`
-    height: 90vh;
+    height: 100vh;
     margin-top: -10rem;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,7 @@ export const Conteiner  = styled.section`
 export const ConteinerText = styled.div`
     width: 70%;
     margin: 0% auto;
+    padding: 0 2rem;
 
     h3 {
         margin-bottom: 1.6rem;

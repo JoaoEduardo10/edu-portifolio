@@ -8,6 +8,7 @@ export const Conteiner  = styled.div<{ project: boolean }>`
     @media (max-width: 513px) {
         padding: 0 0rem;
     }
+
 `;
 
 export const ConteinerImgTop = styled.div`

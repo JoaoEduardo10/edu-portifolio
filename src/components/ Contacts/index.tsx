@@ -9,7 +9,7 @@ import { FiGithub } from 'react-icons/fi';
 
 export const Contacts = () => {
 	return (
-		<S.Conteiner>
+		<S.Conteiner id='contato' data-aos="fade-up">
 			<ConteinerFlex>
 				<Hearding text='Contatos' />
 				<S.ConteinerContacts>

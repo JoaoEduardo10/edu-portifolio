@@ -3,12 +3,13 @@ import * as S from './style';
 
 type Props = {
     children: ReactNode
+	viwPort?: boolean
 }
 
-export const ConteinerFlex = ({ children }: Props) => {
+export const ConteinerFlex = ({ children, viwPort = false }: Props) => {
 
 	return (
-		<S.Conteiner>
+		<S.Conteiner viwport={viwPort}>
 			{children}
 		</S.Conteiner>
 	);

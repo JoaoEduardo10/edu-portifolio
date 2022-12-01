@@ -7,7 +7,7 @@ import * as S from './style';
 export const ConteinerProject = () => {
 
 	return (
-		<S.Conteiner>
+		<S.Conteiner id='projects' data-aos="zoom-in-down">
 			<ConteinerFlex>
 				<Hearding text='Projetos'/>
 				<ProjetcDestaques />

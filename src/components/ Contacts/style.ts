@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Conteiner  = styled.div`
-    margin-top: 8rem;
+   margin: 18rem 0;
 `;
 
 export const ConteinerContacts = styled.ul`
@@ -12,8 +12,6 @@ export const ConteinerContacts = styled.ul`
     align-items: center;
     gap: 3rem;
     margin-top: 3rem;
-
-    
 `;
 
 export const Contact = styled.li`
