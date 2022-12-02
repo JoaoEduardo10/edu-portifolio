@@ -13,6 +13,7 @@ export const ConteinerContacts = styled.ul`
     align-items: center;
     gap: 3rem;
     margin-top: 3rem;
+    padding: 2rem;
 `;
 
 export const Contact = styled.li`
