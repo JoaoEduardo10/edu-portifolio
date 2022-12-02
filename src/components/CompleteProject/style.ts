@@ -92,14 +92,19 @@ export const Video = styled.div`
         width: 76%;
     }
 
+    @media (max-width: 395px) {
+        margin-bottom: 1rem;
+    }
+
 `;
 
 export const ConteinerButtons = styled.div`
     display: flex;
-    justify-content: space-between;
-
+    width: 100%;
+    gap: 4rem;
+    
     button {
-        width: 13rem;
+        width: 20rem;
         padding: .5rem;
     }
 
@@ -111,9 +116,15 @@ export const ConteinerButtons = styled.div`
        gap: 1.6rem;
 
        button {
-        width: 12rem;
+        width: 14rem;
         padding: .1rem;
        }
+    }
+
+    @media (max-width: 395px) {
+        button {
+            width: 12rem;
+        }
     }
 `;
 
@@ -149,6 +160,8 @@ export const ConteinerTexts = styled.div`
             }
         }
     }
+
+   
 
     h1 {
         font-size: 3.7rem;

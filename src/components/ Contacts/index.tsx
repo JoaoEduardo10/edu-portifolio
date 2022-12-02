@@ -7,9 +7,14 @@ import { BsTelephone } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 
+import { useAppSelector } from '../../store/hookes';
+
 export const Contacts = () => {
+	const { colorOn } = useAppSelector(item => item.menu);
+	const clase = colorOn ? 'white' : 'black';
+
 	return (
-		<S.Conteiner id='contato' data-aos="fade-up">
+		<S.Conteiner data-aos='fade-right' id='contato'>
 			<ConteinerFlex>
 				<Hearding text='Contatos' />
 				<S.ConteinerContacts>
@@ -18,7 +23,7 @@ export const Contacts = () => {
 							<div className="icons">
 								<HiOutlineMail />
 							</div>
-							<p>Email</p>
+							<p className={`${clase}`}>Email</p>
 							<span>joaoeduardoj920@gmail.com</span>
 						</a>
 					</S.Contact>
@@ -27,7 +32,7 @@ export const Contacts = () => {
 							<div className="icons">
 								<BsTelephone />
 							</div>
-							<p>Telefone</p>
+							<p className={`${clase}`}>Telefone</p>
 							<span>(86) 98132-0524</span>
 						</a>
 					</S.Contact>
@@ -36,7 +41,7 @@ export const Contacts = () => {
 							<div className="icons">
 								<FaLinkedinIn />
 							</div>
-							<p>Linkedin</p>
+							<p className={`${clase}`}>Linkedin</p>
 							<span>joão eduardo</span>
 						</a>
 					</S.Contact>
@@ -45,7 +50,7 @@ export const Contacts = () => {
 							<div className="icons">
 								<FiGithub />
 							</div>
-							<p>GitHub</p>
+							<p className={`${clase}`}>GitHub</p>
 							<span>@JoaoEduardo10</span>
 						</a>
 					</S.Contact>

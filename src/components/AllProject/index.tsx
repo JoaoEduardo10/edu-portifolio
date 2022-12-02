@@ -5,8 +5,11 @@ import { useState, useEffect } from 'react';
 import { project, PropsProject } from '../../themes/project';
 import { Projects } from '../Projects';
 
+import { useAppSelector } from '../../store/hookes';
+
 export const AllProject = () => {
 	const [allProject, setAllProject] = useState<PropsProject[]>([]);
+	const { colorOn } = useAppSelector(item => item.menu);
 
 	useEffect(() => {
 		setAllProject(project);
@@ -14,7 +17,7 @@ export const AllProject = () => {
 
 	return (
 		<S.Conteiner>
-			<S.Hearding>Todos os Projetos</S.Hearding>
+			<S.Hearding colorOn={colorOn}>Todos os Projetos</S.Hearding>
 			<S.Paragrafo>Click nos cards abaixo.</S.Paragrafo>
 			<S.ConteinerProject>
 				{

@@ -5,6 +5,7 @@ export const Conteiner  = styled.div<{ menuOn: boolean }>`
     width: 100%;
     height: 100vh;
     z-index: 200;
+    top: 12%;
     background-color: rgba(0,0,0,0.65);
     backdrop-filter: blur(1rem);
     font-family: 'Poppins', sans-serif;

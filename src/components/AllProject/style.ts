@@ -5,12 +5,13 @@ export const Conteiner  = styled.div`
     margin-bottom: 5rem;
 `;
 
-export const Hearding  = styled.h3`
+export const Hearding  = styled.h3<{ colorOn: boolean }>`
     position: relative;
     display: inline-block;
     font-size: 2.8rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
+    color: ${props => props.colorOn ? '#fff' : '#000'};
 
     &::after {
         content: '';

@@ -14,12 +14,13 @@ export const Conteiner  = styled.section`
     }
 `;
 
-export const Conteinertext = styled.div`
+export const Conteinertext = styled.div<{ coloOn: boolean }>`
     display: flex;
     flex-direction: column;
 
     .textOne {
         font-size: 5rem;
+        color: ${props => !props.coloOn ? 'black' : '#fff'};
     }
 
     .textTwo {

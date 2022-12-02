@@ -15,6 +15,12 @@ export const Conteiner  = styled.button`
     &:hover {
         transform: scale(1.1);
     }
+
+    @media (max-width: 950px) {
+        &:hover {
+            transform: scale(1);
+        }
+    }
 `;
 
 export const Texto = styled.p`

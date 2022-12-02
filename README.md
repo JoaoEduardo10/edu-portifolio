@@ -1,3 +1,12 @@
-# New Protifólio
+## New Protifólio
 
-- Em desemvolvimento...
+# Tecnologias usadas
+- StoryBook
+- React.js
+- TypeScript
+- Styled-Components
+- React-icons
+- Bliblioteca de animação Aos
+- Bliblioteca react-type-animation
+- Bliblioteca uuid
+- Redux.js

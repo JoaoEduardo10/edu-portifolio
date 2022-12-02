@@ -46,12 +46,21 @@ export const Hearding = styled.h1`
 `;
 
 export const ConteinerBackground = styled.div`
-    background-color: ${props => props.theme.colors.purple_200};
     padding: .5rem;
     width: 10rem;
     border-radius: 3rem;
     cursor: pointer;
     display: flex;
+
+    &.round-left {
+        justify-content: left;
+        background-color: ${props => props.theme.colors.purple_200};
+    }
+
+    &.round-right {
+        justify-content: right;
+        background-color: #fff;
+    }
 
     @media (max-width: 523px) {
         width: 9rem;

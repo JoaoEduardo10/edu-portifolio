@@ -1,7 +1,9 @@
 type Props = {
     menuOn: boolean
+    colorOn: boolean
 }
 
 export const initialState: Props = {
-	menuOn: false
+	menuOn: false,
+	colorOn: true
 };

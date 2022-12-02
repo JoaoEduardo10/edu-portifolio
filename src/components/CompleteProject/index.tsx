@@ -14,6 +14,7 @@ export type PropsCompleteProject = {
 }
 
 export const CompleteProject = ({ id }: PropsCompleteProject) => {
+
 	const [allProject, setAllProject] = useState<PropsProject[]>([]);
 	const projectFilter = allProject.filter(item => item.id === id);
 	const [video] = projectFilter.map(item => item.video);
@@ -37,14 +38,21 @@ export const CompleteProject = ({ id }: PropsCompleteProject) => {
 						<video  autoPlay loop muted src={video}></video>
 					</S.Video>
 					<S.ConteinerButtons>
-						<ButtonLinks 
-							link='123'
-							text='Click a que'
-						/>
-						<ButtonLinks 
-							link='123'
-							text='Click a que'
-						/>
+						{
+							projectFilter.map(item => (
+								<>
+									<ButtonLinks key={item.id} 
+										link={item.acesso.projeto} 
+										text="acesse o projeto" 
+									/>
+									<ButtonLinks 
+										key={item.id} 
+										link={item.acesso.repositorio} 
+										text="acesse o repositótio" 
+									/>
+								</>
+							))
+						}
 					</S.ConteinerButtons>
 				</S.ConteinerVideo>
 				<S.ConteinerTexts>

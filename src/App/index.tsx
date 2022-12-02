@@ -16,13 +16,14 @@ import { useEffect } from 'react';
 
 export const  Home = () => {
 	const { project, id } = useAppSelector(item => item.completeProject);
+	const { colorOn } = useAppSelector(item => item.menu);
 
 	useEffect(() => {
 		aos.init({ duration: 1000 });
 	}, []);
 
 	return (
-		<S.Conteiner project={project}>
+		<S.Conteiner className='showColor' project={project} background={colorOn}>
 			{
 				project && (
 					<CompleteProject id={id} />

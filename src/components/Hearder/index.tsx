@@ -1,5 +1,7 @@
 import * as S from './style';
 
+import curriculo  from '../../download/JoaoE.pdf';
+
 import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 
@@ -8,13 +10,16 @@ import { theme } from '../../style/themes';
 import { ButtoDownload } from '../Buttons';
 import { BiCodeAlt } from 'react-icons/bi';
 
+import { useAppSelector } from '../../store/hookes';
+
 export const Hearder = () => {
 	const [nameOne, setNameOne] = useState(false);
 	const [nameTwo, setNameTwo] = useState(false);
+	const { colorOn } = useAppSelector(item => item.menu);
 
 	return (
 		<S.Conteiner data-aos="fade-down">
-			<S.Conteinertext>
+			<S.Conteinertext coloOn={colorOn}>
 				<TypeAnimation 
 					sequence={[
 						'Olá, Sou o',
@@ -68,7 +73,7 @@ export const Hearder = () => {
 					)
 				}
 
-				<ButtoDownload link='#' text='Download CV' />
+				<ButtoDownload link={curriculo} text='Download CV' />
 			</S.Conteinertext>
 			<S.ConteinerIcon>
 				<BiCodeAlt />

@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react';
 import * as S from './style';
 
-import { useAppDispatch } from '../../store/hookes';
+import { useAppDispatch, useAppSelector } from '../../store/hookes';
 import { addId, addProject } from '../../store/interfaces/completeProject/completProjectSlice';
 
 export type PropsDestaques = {
@@ -16,6 +16,7 @@ export const Projects = ({ img, tecnologias, text, data, id }:PropsDestaques) =>
 	const [show, setShow] = useState(false);
 	const [color, setColor] = useState(false);
 	const dispatch = useAppDispatch();
+	const { colorOn } = useAppSelector(item => item.menu);
 
 
 	const handleMouseEnter = () => {
@@ -41,6 +42,7 @@ export const Projects = ({ img, tecnologias, text, data, id }:PropsDestaques) =>
 			onMouseEnter={handleMouseEnter} 
 			onMouseLeave={handleMouseOut}
 			onClick={handleClick}
+			colorOn={colorOn}
 		>
 			<S.conteinerImg  >
 				<img src={img} alt={text} />

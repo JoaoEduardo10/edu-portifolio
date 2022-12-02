@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Conteiner  = styled.div`
+export const Conteiner  = styled.div<{ colorOn: boolean }>`
     width: 38.4rem;
     height: 24.2rem;
     border: .1rem solid black;
@@ -8,7 +8,7 @@ export const Conteiner  = styled.div`
     
 
     &:hover {
-        box-shadow: 0 0 5rem #fff;
+        box-shadow: 0 0 5rem ${props => props.colorOn ? '#fff' : '#000'};
         z-index: 100;
         transform: scale(1.2);
 
@@ -36,6 +36,7 @@ export const conteinerImg = styled.div`
     width: 100%;
     height: 100%;
     cursor: pointer;
+    background-color: #000;
 
     img {
         object-fit: cover;

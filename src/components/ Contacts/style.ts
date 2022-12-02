@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Conteiner  = styled.div`
-   margin: 18rem 0;
+   margin-top: 13rem;
+   margin-bottom: 17rem;
 `;
 
 export const ConteinerContacts = styled.ul`
@@ -44,6 +45,13 @@ export const Contact = styled.li`
             font-size: 1.8rem;
             color: #fff;
             font-family: ${props => props.theme.fonts.poppins};
+
+            &.white {
+                color: #fff;
+            }
+            &.black {
+                color: #000;
+            }
         }
 
         span {
