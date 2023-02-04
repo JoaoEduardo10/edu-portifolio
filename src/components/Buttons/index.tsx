@@ -13,7 +13,7 @@ export type PropsButtonClick = {
 export const ButtoDownload = ({ link, text }: ButtonDownload) => {
 	return (
 		<S.Conteiner >
-			<a href={link} download>{text}</a>
+			<a role={'link'} href={link} download>{text}</a>
 		</S.Conteiner>
 	);
 };

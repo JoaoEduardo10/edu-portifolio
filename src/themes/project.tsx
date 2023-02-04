@@ -9,7 +9,8 @@ import {
 	SiJavascript, 
 	SiTypescript, 
 	SiRedux, 
-	SiStyledcomponents, 
+	SiStyledcomponents,
+	SiNextdotjs
 } from 'react-icons/si';
 
 //images dos projetos
@@ -22,6 +23,7 @@ import calculadora from '../img/calculadora.jpg';
 import netflix from '../img/netflix.jpg';
 import pokedex from '../img/pokedex.png';
 import world from '../img/world.png';
+import loandingPageNext from '../img/loanding-page-next.png';
 
 //videos dos projetos
 import bugDroidVd from '../videos/bugdroid.mp4';
@@ -33,7 +35,7 @@ import filmesVd from '../videos/filmes.mp4';
 import formularioDevVd from '../videos/formularioDev.mp4';
 import climaVd from '../videos/clima.mp4';
 import worldVd from '../videos/world.mp4';
-
+import loandingPageNextVd from '../videos/laondingNext.mp4';
 
 export type PropsProject = {
     id: string
@@ -216,6 +218,27 @@ export const project: PropsProject[] = [
 		},
 		text: 'Aplicação que ver todos os paises e estados',
 		text2: 'Já em um conseito mais apronfudado sobre React. Praticando com algumas tecnologias e Libs, como: TypeScript, React-router-dom, react-icons e Styled-Components e utilizando Redux como um gerenciador de estado global. Tambem utilizando um pré-processador CSS, o Sass. ' 
+	},
+	{
+		id: uuId4(),
+		name: 'Loanding-page-next',
+		date: '04 de Outubro de 2023',
+		img: loandingPageNext,
+		video: loandingPageNextVd,
+		tecnologias: [
+			<FaHtml5 key={1} />, 
+			<SiNextdotjs key={4}/>,
+			<SiTypescript key={5} />,
+			<AiFillApi key={6} />,
+			<SiStyledcomponents key={7} />,
+		],
+		destaque: false,
+		acesso: {
+			projeto: 'https://loanding-page-next.vercel.app/',
+			repositorio: 'https://github.com/JoaoEduardo10/loanding-page-next'
+		},
+		text: 'Loanding page feita com next.js',
+		text2: 'Loanding page feita com next.js, utilizando o metodo SSG para rederização e uma api nativa do next para enviar os email ao preencher o formulario.' 
 	},
 	
 ]; 
