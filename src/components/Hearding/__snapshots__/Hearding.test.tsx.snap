@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Hearding /> > should a render Heading with color Black 1`] = `
+.c0 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  color: #000;
+}
+
+<h2
+  class="c0"
+>
+  Um test
+</h2>
+`;
+
+exports[`<Hearding /> > should a render Heading with color white 1`] = `
+.c0 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+<h2
+  class="c0"
+>
+  Um test
+</h2>
+`;
