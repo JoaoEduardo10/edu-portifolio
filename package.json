@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "sb": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "vitest"
+    "test": "vitest --watch"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
@@ -38,6 +38,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/redux-mock-store": "^1.0.3",
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
@@ -48,8 +49,9 @@
     "eslint-plugin-storybook": "^0.6.7",
     "jest-styled-components": "^7.1.1",
     "jsdom": "^20.0.3",
+    "redux-mock-store": "^1.5.4",
     "typescript": "^4.6.4",
     "vite": "^3.2.3",
-    "vitest": "^0.25.3"
+    "vitest": "^0.25.8"
   }
 }

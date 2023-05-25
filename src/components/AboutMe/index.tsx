@@ -1,9 +1,14 @@
 import { Hearding } from "../Hearding";
 import * as S from "./style";
+import React from "react";
 
 export const AboutMe = () => {
   return (
-    <S.Conteiner data-aos="fade-right" id="sobre">
+    <S.Conteiner
+      aria-label="Conteiner AboutMe"
+      data-aos="fade-right"
+      id="sobre"
+    >
       <Hearding text="Sobre mim" />
       <S.ConteinerText>
         <h3>Teresina, PI</h3>

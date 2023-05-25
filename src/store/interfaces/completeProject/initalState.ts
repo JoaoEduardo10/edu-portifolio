@@ -1,10 +1,9 @@
 type Props = {
-    project: boolean
-    id: string
-}
-
+  project: boolean;
+  id: string;
+};
 
 export const initialState: Props = {
-	id: '',
-	project: false
+  id: "",
+  project: false,
 };
