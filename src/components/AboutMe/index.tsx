@@ -12,14 +12,14 @@ export const AboutMe = () => {
       <Hearding text="Sobre mim" />
       <S.ConteinerText>
         <h3>Teresina, PI</h3>
-        <S.Paragrafo>
+        <S.Paragrafo aria-label="Texto">
           Olá, meu nome é João Eduardo e sou apaixonado por tecnologia. Tive meu
           primeiro contato com programação quando meu primo me mostrou como
           criar uma calculadora com Python. Fiquei fascinado com a ideia de
           poder criar algo tão incrível e decidi aprender mais sobre
           programação.
         </S.Paragrafo>
-        <S.Paragrafo>
+        <S.Paragrafo aria-label="Texto">
           Atualmente, tenho conhecimentos em algumas tecnologias tanto de
           front-end quanto de back-end e continuo estudando constantemente,
           ciente de que a aprendizagem é uma jornada contínua. Busco sempre me

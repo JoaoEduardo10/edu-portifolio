@@ -1,0 +1,88 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<AboutMe /> > should to match snapshot 1`] = `
+.c1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.c0 {
+  height: 100vh;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  width: 70%;
+  margin: 0% auto;
+  padding: 0 2rem;
+}
+
+.c2 h3 {
+  margin-bottom: 1.6rem;
+  font-size: 2.7rem;
+  color: #8257E6;
+}
+
+.c3 {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  color: #828282;
+}
+
+@media (max-width:441px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (max-width:441px) {
+  .c3 {
+    font-size: 1.6rem;
+  }
+}
+
+<section
+  aria-label="Conteiner AboutMe"
+  class="c0"
+  data-aos="fade-right"
+  id="sobre"
+>
+  <h2
+    class="c1"
+  >
+    Sobre mim
+  </h2>
+  <div
+    class="c2"
+  >
+    <h3>
+      Teresina, PI
+    </h3>
+    <p
+      aria-label="Texto"
+      class="c3"
+    >
+      Olá, meu nome é João Eduardo e sou apaixonado por tecnologia. Tive meu primeiro contato com programação quando meu primo me mostrou como criar uma calculadora com Python. Fiquei fascinado com a ideia de poder criar algo tão incrível e decidi aprender mais sobre programação.
+    </p>
+    <p
+      aria-label="Texto"
+      class="c3"
+    >
+      Atualmente, tenho conhecimentos em algumas tecnologias tanto de front-end quanto de back-end e continuo estudando constantemente, ciente de que a aprendizagem é uma jornada contínua. Busco sempre me aprimorar e descobrir novas tecnologias para continuar evoluindo como desenvolvedor. Estou animado para continuar aprendendo e crescendo no mundo da tecnologia!
+    </p>
+  </div>
+</section>
+`;

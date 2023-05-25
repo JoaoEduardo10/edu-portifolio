@@ -9,7 +9,21 @@ describe("<AboutMe />", () => {
     renderTheme(<AboutMe />);
 
     const aboutMeConteiner = screen.getByLabelText("Conteiner AboutMe");
+    const heading = screen.getByRole("heading", { name: "Sobre mim" });
+    const subHeading = screen.getByRole("heading", { name: "Teresina, PI" });
+    const text = screen.getAllByLabelText("Texto");
 
     expect(aboutMeConteiner).toBeInTheDocument();
+    expect(heading).toBeInTheDocument();
+    expect(subHeading).toBeInTheDocument();
+    expect(text.length).toBe(2);
+  });
+
+  it("should to match snapshot", () => {
+    renderTheme(<AboutMe />);
+
+    const aboutMeConteiner = screen.getByLabelText("Conteiner AboutMe");
+
+    expect(aboutMeConteiner).toMatchSnapshot();
   });
 });
