@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ButtoDownload /> > should to match snapshot 1`] = `
+.c0 {
+  padding: 1rem 2.5rem;
+  border: none;
+  font-size: 2rem;
+  background-image: linear-gradient(to left,#A115E4,#8257E6);
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.c0 a {
+  color: #fff;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media (max-width:950px) {
+  .c0:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+<button
+  class="c0"
+>
+  <a
+    download=""
+    href="https://test"
+    role="link"
+  >
+    test
+  </a>
+</button>
+`;
