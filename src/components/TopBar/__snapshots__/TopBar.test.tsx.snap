@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<TopBar /> > should a render TopBar 1`] = `
+.c0 {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem 6rem;
+  background-color: #13131F;
+  border-bottom: 0.1rem solid #A115E4;
+}
+
+.c1 svg {
+  font-size: 4rem;
+  color: #8257E6;
+  cursor: pointer;
+}
+
+.c1 .svg {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.c2 {
+  font-size: 3rem;
+}
+
+.c3 {
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3.round-left {
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  background-color: #8257E6;
+}
+
+.c3.round-right {
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  background-color: #fff;
+}
+
+.c4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+@media (max-width:523px) {
+  .c0 {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width:523px) {
+  .c1 svg {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width:523px) {
+  .c2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width:523px) {
+  .c3 {
+    width: 9rem;
+  }
+}
+
+<aside
+  aria-label="Conteiner TopBar"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      aria-label="Abrir Menu"
+      fill="none"
+      height="1em"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1="3"
+        x2="21"
+        y1="12"
+        y2="12"
+      />
+      <line
+        x1="3"
+        x2="21"
+        y1="6"
+        y2="6"
+      />
+      <line
+        x1="3"
+        x2="21"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+  </div>
+  <h1
+    class="c2"
+  >
+    Portifólio
+  </h1>
+  <div
+    aria-label="Botão de Alteração de Fundo"
+    class="c3 round-left"
+  >
+    <div
+      class="c4"
+    />
+  </div>
+</aside>
+`;
