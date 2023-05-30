@@ -9,7 +9,6 @@ import {
   SiStyledcomponents,
   SiStorybook,
   SiJest,
-  SiMaterialui,
   SiMongodb,
   SiExpress,
   SiDocker,
@@ -72,10 +71,6 @@ export const skills: PropsArreySkills[] = [
   {
     children: <BiTestTube />,
     text: "React-test",
-  },
-  {
-    children: <SiMaterialui />,
-    text: "Material-ui",
   },
   {
     children: <AiFillApi />,
