@@ -1,9 +1,9 @@
+import React, { useEffect, useState } from "react";
 import * as S from "./style";
 
 import curriculo from "../../download/JoaoE.pdf";
 
 import { TypeAnimation } from "react-type-animation";
-import { useState } from "react";
 
 import { theme } from "../../style/themes";
 
@@ -17,22 +17,42 @@ export const Hearder = () => {
   const [nameTwo, setNameTwo] = useState(false);
   const { colorOn } = useAppSelector((item) => item.menu);
 
+  useEffect(() => {
+    const time = setTimeout(() => {
+      setNameOne(true);
+    }, 1000);
+
+    return () => clearTimeout(time);
+  }, []);
+
+  useEffect(() => {
+    const time = setTimeout(() => {
+      if (nameOne) {
+        setNameTwo(true);
+      }
+    }, 2000);
+
+    return () => clearTimeout(time);
+  }, [nameOne]);
+
   return (
-    <S.Conteiner data-aos="fade-down">
-      <S.Conteinertext coloOn={colorOn}>
+    <S.Conteiner aria-label="Conteiner Hearder" data-aos="fade-down">
+      <S.Conteinertext aria-label="Conteiner Text" coloOn={colorOn}>
         <TypeAnimation
-          sequence={["Olá, Sou o", 1000, () => setNameOne(true)]}
+          sequence={["Olá, Sou o", 1000]}
           wrapper="h2"
           cursor={false}
           className="textOne"
+          aria-label="Nome Inicial"
         />
         {nameOne && (
           <TypeAnimation
-            sequence={["João Eduardo :)", 1000, () => setNameTwo(true)]}
+            sequence={["João Eduardo :)", 1000]}
             wrapper="h2"
             cursor={false}
             style={{ color: theme.colors.purple_200 }}
             className="textTwo"
+            aria-label="Meu Nome"
           />
         )}
 
@@ -63,12 +83,13 @@ export const Hearder = () => {
             repeat={Infinity}
             style={{ color: "#828282" }}
             className="text3"
+            aria-label="Tecnologias"
           />
         )}
 
         <ButtoDownload link={curriculo} text="Download CV" />
       </S.Conteinertext>
-      <S.ConteinerIcon>
+      <S.ConteinerIcon role="img">
         <BiCodeAlt />
       </S.ConteinerIcon>
     </S.Conteiner>
